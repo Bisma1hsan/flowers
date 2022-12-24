@@ -2,6 +2,12 @@
 *{
     font-family: 'Poppins',cursive;
 }
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
 body{
     color: azure;
     width: 100%;
