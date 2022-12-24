@@ -18,7 +18,7 @@
             <span>H</span>
             <span>A</span>
             <span>I</span>
-            <span> </span>
+            <span>   </span>
             <span>F</span>
             <span>A</span>
             <span>N</span>
@@ -37,7 +37,11 @@
 </body>
 <script>
     $(document).ready(function() {
-        $('.container').fadeIn(2000)
+        
+        setTimeout(() => {
+            $('.container').fadeIn(1000)
+        }, 1000);
+
         setTimeout(() => {
             $('.container').fadeOut(1000)
         }, 4000);
