@@ -7,7 +7,22 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
-    
+    <script>
+        var k = 0;
+        function tombol() {
+            if(k==1) {
+                $(".link-bunga").text("klik lagii")
+            } else if(k==2) {
+                $(".link-bunga").text("sekali lagii")
+            } else if(k==2) {
+                $(".link-bunga").text("sekali lagii ayangg")
+                $(".link-bunga").attr("href","flower.html")
+            }
+            k++
+        }
+    </script>
+
+
     <title>BUAT FANII</title>
 </head>
 <body>
@@ -61,19 +76,6 @@
         setTimeout(() => {
             $('.container').fadeIn(1000)
         }, 12600);
-
-        var k = 0;
-        function tombol() {
-            if(k==1) {
-                $(".link-bunga").text("klik lagii")
-            } else if(k==2) {
-                $(".link-bunga").text("sekali lagii")
-            } else if(k==2) {
-                $(".link-bunga").text("sekali lagii ayangg")
-                $(".link-bunga").attr("href","flower.html")
-            }
-            k++
-        }
 
     })
 </script>
