@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    
+    <script src="/js/three.min.js"></script>
+    <script src="/js/vanta.birds.min.js"></script>
     <title>FANII</title>
 </head>
 <body>
@@ -62,6 +65,21 @@
         }, 12600);
 
     })
+
+    VANTA.BIRDS({
+  el: "#.container",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  backgroundColor: 0x0,
+  separation: 41.00,
+  cohesion: 21.00,
+  quantity: 4.00
+})
 </script>
 
 </html>
