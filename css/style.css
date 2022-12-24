@@ -15,9 +15,10 @@ body{
 .greetings{
     font-size: 6rem;
     font-weight: 900;
+    text-align: center;
 }
 .greetings > span{
-    animation: glow 2.5s ease-in-out infinite;
+    animation: glow 3.5s ease-in-out infinite;
 }
 @keyframes glow{
     0%, 100%{
@@ -51,10 +52,26 @@ body{
 .greetings > span:nth-child(8){
     animation-delay: 1.4s;
 }
+.greetings > span:nth-child(9){
+    animation-delay: 1.6s ;
+}
+.greetings > span:nth-child(10){
+    animation-delay: 1.8s ;
+}
+.greetings > span:nth-child(11){
+    animation-delay: 2s;
+}
+.greetings > span:nth-child(12){
+    animation-delay: 2.2s;
+}
 
 .description{
     font-size: 1.5rem;
     margin-bottom: 20px;
+}
+
+.button {
+    text-align: center;
 }
 
 .button a{
