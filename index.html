@@ -6,28 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <title>FANII</title>
 </head>
 <body>
-    <div class="greetings">
-    <!-- silahkan menambah kata sesuai keinginan dengan <span>text...</span -->
-        <span>H</span>
-        <span>A</span>
-        <span>I</span>
-        <span><br></span>
-        <span>F</span>
-        <span>A</span>
-        <span>N</span>
-        <span>I</span>
-    </div>
-    <div class="description">
-        <span>Selamat Ulang Tahun</span>
-    </div>
-    <div class="button">
-        <button>
-            <a href="flower.html">Klik disini</a>
-        </button>
-        
+    <div class="container">
+        <div class="description" id="teks-awal">
+            "Kamu adalah salah satu alasanku bersabar dan bersemangat menjalani hariku. <br>Kamu adalah anugerah terindah yang Tuhan berikan kepadaku. <br>Selamat ulang tahun cintaku"
+        </div>
+        <div class="greetings" style="display: none;">
+            <span>H</span>
+            <span>A</span>
+            <span>I</span>
+            <span> </span>
+            <span>F</span>
+            <span>A</span>
+            <span>N</span>
+            <span>I</span>
+        </div>
+        <div class="description" style="display: none;">
+            <span>Selamat Ulang Tahunnn!!</span>
+        </div>
+        <div class="button" style="display: none;">
+            <button>
+                <a href="flower.html">Klik disini</a>
+            </button>
+            
+        </div>
     </div>
 </body>
+<script>
+    $(document).ready(function() {
+        $('.container').fadeIn(1000)
+        setTimeout(() => {
+            $('.container').fadeOut(1000)
+        }, 3000);
+
+        setTimeout(() => {
+            $('.greetings').css("display", "")
+            $('.description').css("display", "")
+            $('#teks-awal').css("display", "")
+            $('.button').css("display", "")
+        }, 4700);
+
+        setTimeout(() => {
+            $('.container').fadeIn(1000)
+        }, 5000);
+
+    })
+</script>
+
 </html>
